@@ -29,7 +29,7 @@ router.post('/api/url/', (req,res) => {
     urlDetails['code'] = code;
     db.push(urlDetails);
     urlDetails =[];
-    res.send(shorten_url);
+    res.send({'shortUrl' : shorten_url});
 })
 
 
