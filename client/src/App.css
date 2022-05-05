@@ -40,7 +40,7 @@
 .header {
   position: fixed;
   top: 0;
-  height: 50px;
+  height: 60px;
   width: 100%;
   z-index: 8;
   background-color: white;
@@ -53,9 +53,10 @@
 }
 
 .content{
-  margin-top: 50px;
+  margin-top: 60px;
   text-align: center;
-  margin-bottom: 450px;
+  padding-bottom: 450px;
+  background-color: #EFEAE2;
   
 }
 .content .urlInput{
@@ -76,7 +77,11 @@
 
 .urlInput input{
   height: 25px;
-  width : 400px
+  width : 400px;
+  border-radius: 5px;
+  border-width: 5px;
+  
+
 }
 
 .footer{
@@ -109,4 +114,16 @@
   color: white;
   text-align: center;
   border-radius: 5px;
+}
+
+.urlInput button:hover{
+
+  background-color: #b6bfd3;
+  cursor: pointer;
+}
+
+.header img{
+  height: 3.5em;
+  border-radius: 100%;
+  
 }

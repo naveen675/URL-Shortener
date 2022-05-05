@@ -12,21 +12,19 @@ function URL() {
 
 
 
+    function HandleClick() {
 
-    
 
-    const data = {'uri' : shortenUrl};
+        const data = {'uri' : inputUrl};
 
-    const requestOptions = {
+        const requestOptions = {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(data)
   };
-    const fetchShortenUrl = () => {fetch('/uri/api/url',requestOptions)
+        const fetchShortenUrl = () => {fetch('/uri/api/url',requestOptions)
         .then((response) => {return response.json()}).then((data) => {setShortenUrl(data['shortUrl'])})
     }
-
-    function HandleClick() {
 
         if(validator.isURL(inputUrl)){
 
